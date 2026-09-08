@@ -1,0 +1,13 @@
+{
+  "version": "0.1",
+  "backends": [
+    {"id": "cpu", "status": "foundation", "required": true},
+    {"id": "cuda", "status": "planned", "vendors": ["NVIDIA"]},
+    {"id": "hip", "status": "planned", "vendors": ["AMD"]},
+    {"id": "vulkan", "status": "planned", "vendors": ["Intel", "AMD", "NVIDIA", "Other"]},
+    {"id": "metal", "status": "planned", "vendors": ["Apple"]},
+    {"id": "sycl", "status": "planned", "vendors": ["Intel"]},
+    {"id": "openvino", "status": "planned", "vendors": ["Intel"]},
+    {"id": "qnn", "status": "planned", "vendors": ["Qualcomm"]}
+  ]
+}

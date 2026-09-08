@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "id": "oyyo/example-mini",
+  "name": "OYYO Mini Example",
+  "version": "0.0.0",
+  "kind": "model",
+  "description": "Schema example only. This is not an official OYYO model release.",
+  "capabilities": ["chat", "tools", "translation"],
+  "artifacts": [{"path": "model.gguf", "format": "gguf", "sha256": "REPLACE"}],
+  "hardware": {
+    "cpu_only": true,
+    "architectures": ["x86_64", "aarch64"],
+    "accelerators": ["cuda", "hip", "vulkan", "metal", "sycl", "openvino", "qnn"]
+  },
+  "quantization": "Q4",
+  "context_length": 32768,
+  "license": {"id": "TBD"},
+  "provenance": {"base_model": "TBD", "source_revision": "TBD"},
+  "benchmark": {"status": "not-evaluated"}
+}
