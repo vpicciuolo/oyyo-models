@@ -2,9 +2,9 @@
 
 # OYYO Models
 
-### Model registry, compatibility metadata, provenance and qualification records for the OYYO AI ecosystem
+### Native OYYO model family, model registry, compatibility metadata, provenance and qualification records for the OYYO AI ecosystem
 
-**Portable AI · Model Qualification · Provenance · Compatibility · Model Cards · Hardware Profiles · Reproducibility**
+**Native AI · Portable AI · Model Qualification · Provenance · Compatibility · Hardware Profiles · Reproducibility**
 
 [OYYO](https://oyyo.one) · [Benchmark](https://github.com/vpicciuolo/oyyo-benchmark) · [SDK](https://github.com/vpicciuolo/oyyo-sdk) · [Release Gate](./docs/RELEASE_GATE.md) · [Founder](https://github.com/vpicciuolo) · [Investors](https://oyyo.one/investors)
 
@@ -13,49 +13,79 @@
 </div>
 
 > [!IMPORTANT]
-> **OYYO is proprietary technology and is not open source.** This repository is public to expose selected model metadata, compatibility information, provenance records and qualification rules. Public repository visibility does not grant rights to OYYO's private runtime, orchestration engine, proprietary models or other intellectual property.
+> **OYYO is proprietary technology and is not open source.** This repository is public to expose selected model metadata, compatibility information, provenance records and qualification rules. Public repository visibility does not grant rights to OYYO's private runtime, orchestration engine, proprietary models, model-development methods or other intellectual property.
 
 ## What is OYYO Models?
 
-OYYO Models is the public registry layer for model artifacts that are evaluated for use within the OYYO ecosystem.
+OYYO Models is the public registry and qualification layer for the native OYYO model family and other model artifacts evaluated for use within the OYYO ecosystem.
 
-Its purpose is not to collect models simply because they are popular. It is designed to record **what a model is, where it came from, what license applies, how it was transformed, what hardware it supports, how it performed under OYYO Benchmark, and whether it passed the OYYO release gate**.
+OYYO is being engineered with its own proprietary native model family as a first-class foundation. OYYO-native models are intended to run both online/cloud and locally/offline on compatible hardware. OYYO can operate independently using its native models while its intelligence fabric can also work with additional local/offline models and external cloud providers when useful.
+
+The purpose of this repository is not to collect models simply because they are popular. It records **what a model is, where it came from, what rights and provenance apply, how it was transformed, what hardware it supports, how it performed under OYYO Benchmark, and whether it passed the OYYO release gate**.
 
 The repository separates marketing claims from verifiable model identity and release evidence.
 
 ## OYYO model philosophy
 
-A third-party or internally developed model does **not** become an official OYYO model because it has a high leaderboard score, a large download count or a well-known name.
+An official OYYO model is not defined by leaderboard position, download count or a well-known upstream name.
 
-An official release must satisfy the OYYO qualification process, including:
+Every official OYYO-native or qualified model release must satisfy the OYYO qualification process, including:
 
-1. exact upstream identity and revision
-2. license and redistribution review
-3. artifact checksums and provenance
+1. exact identity, architecture and revision
+2. license/rights and provenance review
+3. artifact checksums and reproducible lineage
 4. intended CPU portability testing
 5. target accelerator testing where claimed
 6. OYYO Benchmark qualification
 7. malformed-input, security and reliability testing
-8. a published model card with known limitations
-9. human acceptance review
+8. quantization and capability-regression evaluation
+9. a published model card with known limitations
+10. human acceptance review
 
 See the full **[Official Model Release Gate](./docs/RELEASE_GATE.md)**.
 
-## Planned OYYO model family
+## Planned OYYO native model family
 
-The following names define the intended OYYO product tiers. They do **not** mean that model weights for every tier are already released.
+The following names define the intended OYYO product families. Parameter bands are engineering targets only and can change as benchmark, efficiency and deployment evidence improves. They do **not** mean that weights for every tier are already released.
 
-| Tier | Intended role |
-| --- | --- |
-| **OYYO Nano** | Ultra-light local and edge tier |
-| **OYYO Mini** | Compact everyday local tier |
-| **OYYO Core** | Primary general portable tier |
-| **OYYO Code** | Coding and technical execution specialist |
-| **OYYO Vision** | Vision and multimodal specialist |
-| **OYYO Growth** | Business, research, marketing and growth specialist |
-| **OYYO Max** | Larger high-performance tier |
+| Tier | Indicative target class | Intended role |
+| --- | ---: | --- |
+| **OYYO Nano** | ~1–4B | Ultra-light local, mobile and edge tier |
+| **OYYO Mini** | ~7–9B | Compact everyday local tier |
+| **OYYO Core** | ~14–32B | Primary general professional OYYO intelligence |
+| **OYYO Max** | ~70B class and/or efficient MoE | High-performance workstation, enterprise and cloud tier |
+| **OYYO Code** | Specialist variants | Coding and technical execution |
+| **OYYO Vision** | Specialist/multimodal variants | Vision, screenshot, image and document intelligence |
+| **OYYO Growth** | Specialist variants | Business, research, marketing and growth workflows |
+
+OYYO model engineering prioritizes **capability per GB of memory, per watt, per unit of latency and per serving cost**, not parameter count alone.
 
 Naming conventions are documented in **[`docs/NAMING.md`](./docs/NAMING.md)**.
+
+## Native model development direction
+
+OYYO evaluates the strongest capabilities available across contemporary model families and develops its own model family through independently controlled and legally permitted engineering paths, including architecture research, original and licensed datasets, synthetic data, fine-tuning, distillation where permitted, preference/reinforcement methods, tool-use training, multimodal work and OYYO-specific evaluation.
+
+The objective is not to clone one provider. The objective is to build proprietary OYYO intelligence optimized for OYYO's runtime, memory, agents, tools, real business work and broad hardware compatibility.
+
+## Online, offline and collaborative execution
+
+OYYO-native models are designed around three execution realities:
+
+```text
+OYYO Cloud
+  └─ OYYO-native hosted models
+
+OYYO Local / Offline
+  └─ OYYO-native models on compatible user hardware
+
+OYYO Intelligence Fabric
+  ├─ OYYO-native models
+  ├─ additional local/offline models
+  └─ external cloud models when enabled and useful
+```
+
+The core OYYO experience must not depend on the continuing availability of any external model provider.
 
 ## What this repository records
 
@@ -73,7 +103,7 @@ Machine-readable model package metadata is defined under [`schemas/`](./schemas/
 
 ### Provenance
 
-[`provenance/`](./provenance/) records upstream identity, exact revision, licensing, conversion or fine-tuning lineage, quantization, checksums, build information where material, benchmark version and release date.
+[`provenance/`](./provenance/) records identity, exact revision, applicable rights/licensing, conversion or training lineage where publishable, quantization, checksums, build information where material, benchmark version and release date.
 
 ## Example manifest
 
@@ -85,16 +115,18 @@ It demonstrates the metadata format only. An example manifest is **not** an offi
 
 ## Relationship with OYYO Benchmark
 
-OYYO Models and OYYO Benchmark are deliberately separate.
+OYYO Models and OYYO Benchmark are deliberately separate but developed in parallel with the private OYYO Core Runtime.
 
 ```text
-Candidate model
+OYYO model candidate
       ↓
-Identity + license + provenance
+Identity + rights + provenance
       ↓
 Compatibility validation
       ↓
 OYYO Benchmark
+      ↓
+Runtime + hardware qualification
       ↓
 Security + reliability checks
       ↓
@@ -113,7 +145,7 @@ oyyo-models/
 ├── docs/           Naming and release qualification rules
 ├── examples/       Example manifests
 ├── model-cards/    Official model cards after qualification
-├── provenance/     Source lineage, licenses and checksums
+├── provenance/     Source lineage, rights/licenses and checksums
 ├── schemas/        Machine-readable manifest schemas
 └── VERSION         Registry version
 ```
@@ -122,32 +154,42 @@ oyyo-models/
 
 | Repository | Purpose |
 | --- | --- |
-| **[oyyo-models](https://github.com/vpicciuolo/oyyo-models)** | Model manifests, compatibility metadata, model cards, provenance and release-gate records |
+| **[oyyo-models](https://github.com/vpicciuolo/oyyo-models)** | Native model family records, manifests, compatibility metadata, model cards, provenance and release-gate records |
 | **[oyyo-benchmark](https://github.com/vpicciuolo/oyyo-benchmark)** | Independent evaluation, qualification methodology and reproducible metrics |
-| **[oyyo-sdk](https://github.com/vpicciuolo/oyyo-sdk)** | Python and TypeScript integration surface for OYYO-compatible and OYYO-native APIs |
+| **[oyyo-sdk](https://github.com/vpicciuolo/oyyo-sdk)** | Python and TypeScript integration surface for OYYO-native and OYYO-compatible APIs |
 
-The **OYYO core runtime and orchestration engine remain private and proprietary**.
+The **OYYO core runtime, orchestration/intelligence fabric and proprietary model-development internals remain private and proprietary**.
 
 ## What is OYYO?
 
-OYYO is being built as a **proprietary AI orchestration system for modern business**, designed to coordinate models, tools, memory, agents, multimodal capabilities and structured work through a portable runtime architecture.
+OYYO is a **proprietary AI platform with its own native AI model family**, built to provide one intelligent environment for modern work across local, offline, hybrid and cloud deployment.
 
-The model layer is only one part of OYYO. The system is designed so model choice can evolve while orchestration, memory, tools, artifacts, business workflows and hardware-aware execution remain part of a larger architecture.
+The platform combines OYYO-native models, hardware-adaptive runtime execution, persistent memory and knowledge, tools, agents, multimodal capabilities and structured work. Its orchestration layer can additionally coordinate other local and cloud models, but OYYO is designed to operate independently with its own models.
+
+**One intelligence. One workspace. One place for everything.**
 
 Learn more at **[oyyo.one](https://oyyo.one)**.
+
+## Commercial model
+
+OYYO is designed around predictable monthly plans based on product tier and users/seats. OYYO does not position customer access around a falling token or credit balance. Compute/token accounting may be used internally for engineering and operations, but it is not the core customer billing experience.
+
+## Policy profiles
+
+The public OYYO Cloud service follows OYYO's centrally defined public-cloud policy. Organization deployments can apply organization/user policy profiles. Local/offline products may expose configurable user policy profiles where product configuration and applicable requirements permit.
 
 ## Licensing and model rights
 
 There are two separate questions:
 
-1. **OYYO platform rights**: OYYO is proprietary technology and is not open source.
-2. **Individual model rights**: upstream or derived model artifacts can have their own licenses and redistribution terms. No model license should be inferred from the visibility of this repository.
+1. **OYYO platform/model rights**: OYYO platform technology and OYYO proprietary models are not open source unless OYYO explicitly states otherwise for a specific artifact.
+2. **Third-party model rights**: upstream or derived third-party artifacts can have their own licenses and redistribution terms. No model license should be inferred from repository visibility.
 
-Every official model release must carry explicit provenance and applicable licensing information.
+Every official model release must carry explicit provenance and applicable rights/licensing information.
 
 ## Status
 
-This repository is currently at the **foundation stage (`0.1.0`)**. The registry structure, manifest schema and release-gate process are being established before official model families are promoted.
+This repository is currently at the **foundation stage (`0.1.0`)**. The model registry, native-family architecture targets, manifest schema and release-gate process are being established as the OYYO Native Models program runs in parallel with OYYO Benchmark and OYYO Core Runtime.
 
 ## Ownership and rights
 
@@ -159,7 +201,7 @@ OYYO is proprietary technology. Unless an individual file or third-party artifac
 
 <div align="center">
 
-**OYYO · AI orchestration for real work · Made in UAE 🇦🇪 · Dubai-IT**
+**OYYO · One intelligence. One workspace. One place for everything. · Made in UAE 🇦🇪 · Dubai-IT**
 
 [Website](https://oyyo.one) · [Benchmark](https://github.com/vpicciuolo/oyyo-benchmark) · [SDK](https://github.com/vpicciuolo/oyyo-sdk) · [Founder](https://github.com/vpicciuolo)
 
