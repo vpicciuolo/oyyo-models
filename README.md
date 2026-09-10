@@ -8,7 +8,7 @@
 
 [OYYO](https://oyyo.one) · [Benchmark](https://github.com/vpicciuolo/oyyo-benchmark) · [SDK](https://github.com/vpicciuolo/oyyo-sdk) · [Release Gate](./docs/RELEASE_GATE.md) · [Founder](https://github.com/vpicciuolo) · [Investors](https://oyyo.one/investors)
 
-**Version:** `0.1.0-foundation` · **Built in the UAE 🇦🇪**
+**Version:** `0.1.0-foundation` · **Made in UAE 🇦🇪 · Dubai-IT**
 
 </div>
 
@@ -159,7 +159,7 @@ OYYO is proprietary technology. Unless an individual file or third-party artifac
 
 <div align="center">
 
-**OYYO · AI orchestration for real work · Built in the UAE 🇦🇪**
+**OYYO · AI orchestration for real work · Made in UAE 🇦🇪 · Dubai-IT**
 
 [Website](https://oyyo.one) · [Benchmark](https://github.com/vpicciuolo/oyyo-benchmark) · [SDK](https://github.com/vpicciuolo/oyyo-sdk) · [Founder](https://github.com/vpicciuolo)
 
