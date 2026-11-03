@@ -26,3 +26,8 @@ Catalog cards describe available download candidates and intended use. They do n
 [Machine-readable catalog](../catalog/models.json) · [Qualification](../docs/QUALIFICATION.md) · [Rights](../LICENSE.md)
 
 Copyright © 2026 OYYO · HRN INNOVATION TECHNOLOGIES LTD. All rights reserved.
+
+## Main OYYO documentation
+
+[OYYO ONE AI documentation hub](https://github.com/vpicciuolo/oyyo-one-ai) · [OYYO website](https://oyyo.one) · [Exclusive preview](https://oyyo.one/contact)
+

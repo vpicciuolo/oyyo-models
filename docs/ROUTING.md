@@ -27,7 +27,7 @@ Only compatible, qualified and accepted local models may be selected for local i
 
 ## Agent roles are independent of model names
 
-The current runtime has **200 role definitions** and **1,025 task templates**. Those are catalog counts, not 200 concurrent model processes. A planner, copywriter, financial modeller and reviewer can all use one qualified model in separate passes. Role-specific settings can instead assign different qualified models to different jobs.
+The current runtime has **536 role definitions** and **1,361 task templates**. Those are catalog counts, not 536 concurrent model processes. A planner, copywriter, financial modeller and reviewer can all use one qualified model in separate passes. Role-specific settings can instead assign different qualified models to different jobs.
 
 Teams use bounded specialist assignments, review and synthesis. Saved custom teams support up to four selected specialists plus their configured reviewer. Optional specialist parallelism is resource-limited; it is not unrestricted simultaneous execution of the entire role catalog.
 

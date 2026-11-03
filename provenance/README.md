@@ -69,3 +69,8 @@ Provenance is one required part of the **[OYYO Official Model Release Gate](../d
 Individual model artifacts may have licenses that differ from OYYO platform rights. The applicable rights must be established from the specific release record and upstream license; they must never be inferred from this repository being publicly visible.
 
 **Copyright © 2026 OYYO · HRN INNOVATION TECHNOLOGIES LTD. All rights reserved.**
+
+## Main OYYO documentation
+
+[OYYO ONE AI documentation hub](https://github.com/vpicciuolo/oyyo-one-ai) · [OYYO website](https://oyyo.one) · [Exclusive preview](https://oyyo.one/contact)
+

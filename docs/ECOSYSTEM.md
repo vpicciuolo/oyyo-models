@@ -1,13 +1,15 @@
 # OYYO ecosystem index
 
+[OYYO ONE AI documentation hub](https://github.com/vpicciuolo/oyyo-one-ai) · [OYYO website](https://oyyo.one) · [Exclusive preview](https://oyyo.one/contact)
+
 Find the catalog that matches your question. These public repositories document product capabilities and available interfaces; access to the OYYO workspace is provided privately.
 
 | Repository | Discover |
 | --- | --- |
 | [OYYO Models](https://github.com/vpicciuolo/oyyo-models) | Model lineup, specializations, requirements and capability guides |
-| [OYYO Agents](https://github.com/vpicciuolo/oyyo-agents) | All 200 workspace agent roles, department coverage and specialist functions |
+| [OYYO Agents](https://github.com/vpicciuolo/oyyo-agents) | All 536 workspace agent roles, department coverage and specialist functions |
 | [OYYO Teams](https://github.com/vpicciuolo/oyyo-teams) | Seven built-in workflow groups, collaboration, review and reusable configurations |
-| [OYYO Task Library](https://github.com/vpicciuolo/oyyo-task-library) | 1,025 guided tasks, specialist briefs and 204 creative style options |
+| [OYYO Task Library](https://github.com/vpicciuolo/oyyo-task-library) | 1,361 guided tasks, specialist briefs and 204 creative style options |
 | [OYYO Benchmark](https://github.com/vpicciuolo/oyyo-benchmark) | Evaluation methodology, qualification and reproducibility |
 | [OYYO SDK](https://github.com/vpicciuolo/oyyo-sdk) | Developer interfaces and integration documentation |
 

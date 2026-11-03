@@ -8,7 +8,7 @@
 
 [Choose a model](#choose-by-task) · [Full lineup](#local-text-lineup) · [Hardware guide](docs/HARDWARE.md) · [Request early access](https://oyyo.one/contact)
 
-**Catalog 0.1.15 · Snapshot: 3 November 2026**
+**Catalog 0.1.16 · Snapshot: 3 November 2026**
 
 **Available for private demos and private beta. [Request early access](https://oyyo.one/contact).**
 
@@ -77,9 +77,9 @@ Tell us about the work you want to improve, your department and the kind of demo
 | Repository | Discover |
 | --- | --- |
 | [OYYO Models](https://github.com/vpicciuolo/oyyo-models) | Model lineup, specializations, requirements and capability guides |
-| [OYYO Agents](https://github.com/vpicciuolo/oyyo-agents) | All 200 workspace agent roles, department coverage and specialist functions |
+| [OYYO Agents](https://github.com/vpicciuolo/oyyo-agents) | All 536 workspace agent roles, department coverage and specialist functions |
 | [OYYO Teams](https://github.com/vpicciuolo/oyyo-teams) | Seven built-in workflow groups, collaboration, review and reusable configurations |
-| [OYYO Task Library](https://github.com/vpicciuolo/oyyo-task-library) | 1,025 guided tasks, specialist briefs and 204 creative style options |
+| [OYYO Task Library](https://github.com/vpicciuolo/oyyo-task-library) | 1,361 guided tasks, specialist briefs and 204 creative style options |
 | [OYYO Benchmark](https://github.com/vpicciuolo/oyyo-benchmark) | Evaluation methodology, qualification and reproducibility |
 | [OYYO SDK](https://github.com/vpicciuolo/oyyo-sdk) | Developer interfaces and integration documentation |
 
@@ -100,8 +100,15 @@ Tell us about the work you want to improve, your department and the kind of demo
 
 ## Status and rights
 
-The Windows runtime baseline for this snapshot is **0.1.15**. Operating-system builds have separate qualification baselines; a Windows model listing does not establish Mac or mobile qualification. No device-specific benchmark scores, global speed claims or completed foundation-model training are asserted here.
+The Windows runtime baseline for this snapshot is **0.1.16**. Operating-system builds have separate qualification baselines; a Windows model listing does not establish Mac or mobile qualification. No device-specific benchmark scores, global speed claims or completed foundation-model training are asserted here.
 
 OYYO application technology is proprietary. Individual model artifacts retain their own terms. See [LICENSE.md](LICENSE.md) and the [provenance policy](provenance/README.md). Product aliases do not transfer ownership or remove attribution obligations. This catalog omits download-provider branding from the product selection tables; required license and provenance information remains with the applicable artifact records and distribution.
 
 **Copyright © 2026 OYYO · HRN INNOVATION TECHNOLOGIES LTD. All rights reserved.**
+
+## Main OYYO documentation
+
+[OYYO ONE AI documentation hub](https://github.com/vpicciuolo/oyyo-one-ai) · [OYYO website](https://oyyo.one) · [Exclusive preview](https://oyyo.one/contact)
+
+
+[CPU, GPU and adaptive memory guide](docs/HARDWARE-ACCELERATION.md)
