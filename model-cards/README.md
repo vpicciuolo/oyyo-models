@@ -1,49 +1,28 @@
-# OYYO Model Cards
+# OYYO model directory
 
-Official capability, evaluation, limitation and release records for models qualified for the **OYYO proprietary AI ecosystem**.
+Catalog cards describe available download candidates and intended use. They do not assert completion of the broader official model release gate or universal hardware certification. Each local installation must qualify and accept its exact artifact.
 
-> [!IMPORTANT]
-> **OYYO is not open source.** A public model card documents a model release; it does not grant rights to OYYO technology or override the explicit license attached to an individual model artifact.
+| Model | Use case |
+| --- | --- |
+| [OYYO Nano 1.0](oyyo-nano-1.0-q4.md) | Everyday writing and planning |
+| [OYYO Core 1.0](oyyo-core-1.0-q4.md) | Balanced professional work |
+| [OYYO Pro 1.0](oyyo-pro-1.0-q4.md) | Detailed analysis and technical planning |
+| [OYYO Pocket 2.0](oyyo-pocket-2.0-q4.md) | Small-machine assistance |
+| [OYYO Spark 2.0](oyyo-spark-2.0-q4.md) | Short content and language drafts |
+| [OYYO Nano 2.0](oyyo-nano-2.0-q4.md) | Compact planning and coding help |
+| [OYYO Core 2.0](oyyo-core-2.0-q4.md) | Reasoning, analysis and code |
+| [OYYO Focus Mini 1.0](oyyo-focus-mini-1.0-q4.md) | Compact technical and multilingual work |
+| [OYYO Focus Pro 1.0](oyyo-focus-pro-1.0-q4.md) | Mathematics and detailed technical analysis |
+| [OYYO Code 1.0](oyyo-code-1.0-q4.md) | Coding, debugging and code review |
+| [OYYO Reason 1.0](oyyo-reason-1.0-q4.md) | Multi-step reasoning and mathematics |
+| [OYYO Pro 3.0](oyyo-pro-3.0-q4.md) | Large-machine reasoning candidate |
+| [OYYO Team 3.0](oyyo-team-3.0-q4.md) | Large multi-role workload candidate |
+| [OYYO Focus Mini 2.0](oyyo-focus-mini-2.0-q4.md) | Mid-size technical candidate |
+| [OYYO Swift 3.0](oyyo-swift-3.0-q4.md) | Compact responsive-work candidate |
 
-## Purpose
+- [OYYO-NotzUP-Tiny ALL S1–S4](oyyo-notzup-tiny-all.md): local speech pack and performance tiers.
+- [OYYO Prime S3 0.13](oyyo-prime-s3-0.13.md): optional connected model.
 
-An OYYO model card is published only after a candidate completes the OYYO qualification process. Model cards are intended to make release claims inspectable rather than relying on model names, popularity or vendor benchmark marketing.
+[Machine-readable catalog](../catalog/models.json) · [Qualification](../docs/QUALIFICATION.md) · [Rights](../LICENSE.md)
 
-An official card should document, where applicable:
-
-- model and release identity
-- intended OYYO tier and use cases
-- upstream source and revision
-- applicable license information
-- architecture and artifact format
-- quantization or conversion details
-- supported runtime and hardware profiles
-- OYYO Benchmark version and results
-- business, coding, language, agent and multimodal capabilities tested
-- security and reliability observations
-- known limitations and unsupported scenarios
-- checksums and provenance references
-- release date and review status
-
-## Release gate
-
-A model card is not sufficient by itself to create an official OYYO release. Candidates must complete the **[OYYO Official Model Release Gate](../docs/RELEASE_GATE.md)** and relevant **[OYYO Benchmark](https://github.com/vpicciuolo/oyyo-benchmark)** evaluation.
-
-```text
-Candidate → Provenance → Compatibility → Benchmark → Reliability → Human Review → Model Card → Release
-```
-
-## Current status
-
-At foundation version `0.1.0`, this directory defines the location and policy for future official OYYO model cards. Product-tier names in the repository are roadmap identifiers and should not be interpreted as proof that weights are already released.
-
-## Related OYYO resources
-
-- [OYYO Models](../README.md)
-- [Provenance records](../provenance/README.md)
-- [Release gate](../docs/RELEASE_GATE.md)
-- [OYYO Benchmark](https://github.com/vpicciuolo/oyyo-benchmark)
-- [OYYO SDK](https://github.com/vpicciuolo/oyyo-sdk)
-- [OYYO website](https://oyyo.one)
-
-**Copyright © 2026 OYYO · HRN INNOVATION TECHNOLOGIES LTD. All rights reserved.**
+Copyright © 2026 OYYO · HRN INNOVATION TECHNOLOGIES LTD. All rights reserved.

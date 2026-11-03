@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.0",
+  "catalogVersion": "0.1.14",
+  "snapshotDate": "2026-11-03",
+  "runtimeBaseline": "Windows 0.1.14",
+  "scope": "15 local text download candidates; does not include installed user state",
+  "models": [
+    {
+      "id": "oyyo-nano-1.0-q4",
+      "displayName": "OYYO Nano 1.0",
+      "family": "Nano",
+      "parametersB": 4,
+      "capabilities": [
+        "chat",
+        "planning",
+        "structured-output"
+      ],
+      "sizeBytes": 2497280256,
+      "quantization": "Q4_K_M",
+      "minRamGB": 8,
+      "recommendedRamGB": 16,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "license": "Apache-2.0",
+      "specialization": "Everyday writing and planning",
+      "description": "A compact starting point for emails, short briefs, checklists and structured answers. Useful when you want a general assistant without choosing a specialist.",
+      "exampleRequest": "Draft a friendly customer email explaining a two-day shipping delay. Give a subject line and a clear next step.",
+      "limitations": [
+        "Long documents and complex multi-step reasoning can exceed the practical capacity of this compact option."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-nano-1.0-q4.md"
+    },
+    {
+      "id": "oyyo-core-1.0-q4",
+      "displayName": "OYYO Core 1.0",
+      "family": "Core",
+      "parametersB": 8,
+      "capabilities": [
+        "chat",
+        "planning",
+        "coding"
+      ],
+      "sizeBytes": 5027783488,
+      "quantization": "Q4_K_M",
+      "minRamGB": 12,
+      "recommendedRamGB": 18,
+      "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "license": "apache-2.0",
+      "specialization": "Balanced professional work",
+      "description": "A general-purpose candidate for longer explanations, project plans and light coding. Consider it for day-to-day work that needs more context and detail than a compact assistant.",
+      "exampleRequest": "Turn these product notes into a launch brief with audience, offer, three channels, owners and a checklist.",
+      "limitations": [
+        "Greater memory use than Nano. Important calculations, factual claims and generated code still require checking."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-core-1.0-q4.md"
+    },
+    {
+      "id": "oyyo-pro-1.0-q4",
+      "displayName": "OYYO Pro 1.0",
+      "family": "Pro",
+      "parametersB": 14,
+      "capabilities": [
+        "reasoning",
+        "coding",
+        "analysis"
+      ],
+      "sizeBytes": 9001752960,
+      "quantization": "Q4_K_M",
+      "minRamGB": 20,
+      "recommendedRamGB": 30,
+      "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+      "license": "apache-2.0",
+      "specialization": "Detailed analysis and technical planning",
+      "description": "A larger candidate for structured comparisons, engineering explanations and coding plans. Useful for requests with several constraints and a more substantial final deliverable.",
+      "exampleRequest": "Compare these three architecture options against cost, reliability and maintenance. State assumptions and recommend a validation plan.",
+      "limitations": [
+        "Higher memory and latency costs. Larger size is not evidence of better performance on a particular task."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-pro-1.0-q4.md"
+    },
+    {
+      "id": "oyyo-pocket-2.0-q4",
+      "displayName": "OYYO Pocket 2.0",
+      "family": "Pocket",
+      "parametersB": 0.8,
+      "capabilities": [
+        "chat",
+        "short-writing"
+      ],
+      "sizeBytes": 532517120,
+      "quantization": "Q4_K_M",
+      "minRamGB": 4,
+      "recommendedRamGB": 6,
+      "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+      "license": "apache-2.0",
+      "specialization": "Small-machine assistance",
+      "description": "A very compact candidate for short replies, simple rewrites and everyday questions on memory-constrained computers. Keep requests narrow and supply clear facts.",
+      "exampleRequest": "Rewrite this short message politely. Keep the original meaning and stay under 80 words.",
+      "limitations": [
+        "Not a substitute for larger reasoning or coding models. Limited capacity makes difficult instructions and long context less reliable."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-pocket-2.0-q4.md"
+    },
+    {
+      "id": "oyyo-spark-2.0-q4",
+      "displayName": "OYYO Spark 2.0",
+      "family": "Spark",
+      "parametersB": 2,
+      "capabilities": [
+        "chat",
+        "writing",
+        "translation"
+      ],
+      "sizeBytes": 1280835840,
+      "quantization": "Q4_K_M",
+      "minRamGB": 6,
+      "recommendedRamGB": 9,
+      "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+      "license": "apache-2.0",
+      "specialization": "Short content and language drafts",
+      "description": "A compact writing and translation candidate for email drafts, short social copy and language adaptation. Specify audience, tone and the language you want.",
+      "exampleRequest": "Write three short product announcements in English and Italian using only the facts in this brief.",
+      "limitations": [
+        "Language coverage and translation quality require representative tests. Review proper names and specialised terminology."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-spark-2.0-q4.md"
+    },
+    {
+      "id": "oyyo-nano-2.0-q4",
+      "displayName": "OYYO Nano 2.0",
+      "family": "Nano",
+      "parametersB": 4,
+      "capabilities": [
+        "chat",
+        "planning",
+        "coding"
+      ],
+      "sizeBytes": 2740937888,
+      "quantization": "Q4_K_M",
+      "minRamGB": 8,
+      "recommendedRamGB": 12,
+      "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+      "license": "apache-2.0",
+      "specialization": "Compact planning and coding help",
+      "description": "A compact general candidate for small plans, explanations and contained programming questions. Appropriate when you want to try a newer catalog option without a large memory footprint.",
+      "exampleRequest": "Explain this Python function, identify likely edge cases and suggest two focused tests.",
+      "limitations": [
+        "Catalog generation numbers do not guarantee a quality improvement. Local compatibility and task quality must be checked."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-nano-2.0-q4.md"
+    },
+    {
+      "id": "oyyo-core-2.0-q4",
+      "displayName": "OYYO Core 2.0",
+      "family": "Core",
+      "parametersB": 9,
+      "capabilities": [
+        "reasoning",
+        "coding",
+        "analysis"
+      ],
+      "sizeBytes": 5680522464,
+      "quantization": "Q4_K_M",
+      "minRamGB": 16,
+      "recommendedRamGB": 24,
+      "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "license": "apache-2.0",
+      "specialization": "Reasoning, analysis and code",
+      "description": "A mid-sized candidate for structured analysis, debugging explanations and multi-step technical work. Supply source material and explicit acceptance criteria.",
+      "exampleRequest": "Analyse this bug report and source snippet. Give the likely cause, a proposed patch and meaningful verification steps.",
+      "limitations": [
+        "More memory than Core 1.0. Code is a proposal until applied and tested through actual tools."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-core-2.0-q4.md"
+    },
+    {
+      "id": "oyyo-focus-mini-1.0-q4",
+      "displayName": "OYYO Focus Mini 1.0",
+      "family": "Focus",
+      "parametersB": 3.8,
+      "capabilities": [
+        "reasoning",
+        "coding",
+        "multilingual"
+      ],
+      "sizeBytes": 2491874272,
+      "quantization": "Q4_K_M",
+      "minRamGB": 8,
+      "recommendedRamGB": 12,
+      "sha256": "88c00229914083cd112853aab84ed51b87bdf6b9ce42f532d8c85c7c63b1730a",
+      "license": "mit",
+      "specialization": "Compact technical and multilingual work",
+      "description": "A compact specialist candidate for technical reasoning, code discussion and multilingual tasks. Useful when the task benefits from careful structure on a modest machine.",
+      "exampleRequest": "Explain this algorithm in plain English, then provide a concise French summary and test cases.",
+      "limitations": [
+        "Multilingual and reasoning labels describe intended use, not a published benchmark win or guaranteed language accuracy."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-focus-mini-1.0-q4.md"
+    },
+    {
+      "id": "oyyo-focus-pro-1.0-q4",
+      "displayName": "OYYO Focus Pro 1.0",
+      "family": "Focus",
+      "parametersB": 14,
+      "capabilities": [
+        "reasoning",
+        "math",
+        "coding"
+      ],
+      "sizeBytes": 8890306112,
+      "quantization": "Q4_K_M",
+      "minRamGB": 20,
+      "recommendedRamGB": 30,
+      "sha256": "01e1f25b3e6931054c6c2227b06f4969828434eebc299e8e171f55dab6814485",
+      "license": "mit",
+      "specialization": "Mathematics and detailed technical analysis",
+      "description": "A larger candidate for mathematical explanations, technical comparisons and coding analysis. Ask for quantities, units, intermediate calculations and a final consistency check.",
+      "exampleRequest": "Build a cost comparison for these options using the supplied quantities. Show formulas, assumptions and reconciled totals.",
+      "limitations": [
+        "Generated arithmetic must be checked with calculation tools. This catalog does not certify engineering designs or professional advice."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-focus-pro-1.0-q4.md"
+    },
+    {
+      "id": "oyyo-code-1.0-q4",
+      "displayName": "OYYO Code 1.0",
+      "family": "Code",
+      "parametersB": 7,
+      "capabilities": [
+        "coding",
+        "code-review",
+        "debugging"
+      ],
+      "sizeBytes": 4683073536,
+      "quantization": "Q4_K_M",
+      "minRamGB": 12,
+      "recommendedRamGB": 18,
+      "sha256": "509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c",
+      "license": "apache-2.0",
+      "specialization": "Coding, debugging and code review",
+      "description": "A coding-focused candidate for understanding source, drafting small changes, identifying edge cases and reviewing implementation choices. Best used with exact snippets, errors and expected behaviour.",
+      "exampleRequest": "Review this function for correctness and input handling. Propose a minimal patch and explain how to test it.",
+      "limitations": [
+        "Reading text is not repository access. Edits, builds and tests require authorised tools and execution evidence."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-code-1.0-q4.md"
+    },
+    {
+      "id": "oyyo-reason-1.0-q4",
+      "displayName": "OYYO Reason 1.0",
+      "family": "Reason",
+      "parametersB": 7,
+      "capabilities": [
+        "reasoning",
+        "math",
+        "coding"
+      ],
+      "sizeBytes": 4683073248,
+      "quantization": "Q4_K_M",
+      "minRamGB": 12,
+      "recommendedRamGB": 18,
+      "sha256": "78272d8d32084548bd450394a560eb2d70de8232ab96a725769b1f9171235c1c",
+      "license": "apache-2.0",
+      "specialization": "Multi-step reasoning and mathematics",
+      "description": "A specialist candidate for reasoning-heavy comparisons, mathematical explanation and technical problem decomposition. State the problem, available facts and desired output format.",
+      "exampleRequest": "Solve this scheduling problem with the supplied constraints. Show a clear solution and check every constraint.",
+      "limitations": [
+        "May be slower than a small chat model. Verify calculations, citations and constraint satisfaction independently."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-reason-1.0-q4.md"
+    },
+    {
+      "id": "oyyo-pro-3.0-q4",
+      "displayName": "OYYO Pro 3.0",
+      "family": "Pro",
+      "parametersB": 27,
+      "capabilities": [
+        "chat",
+        "reasoning",
+        "coding"
+      ],
+      "sizeBytes": 16464440224,
+      "quantization": "Q4_K_M",
+      "minRamGB": 40,
+      "recommendedRamGB": 60,
+      "sha256": "322e194ff79741c7baa497c240f677f54b201b0efab44ca8e50f122b39123482",
+      "license": "apache-2.0",
+      "specialization": "Large-machine reasoning candidate",
+      "description": "A larger catalog candidate for detailed reasoning and technical work on well-provisioned machines. Evaluate it against a representative task before assigning important workloads.",
+      "exampleRequest": "Produce a detailed technical decision memo from these specifications, with trade-offs, risks and validation criteria.",
+      "limitations": [
+        "Engine compatibility and quality are unverified until local checks complete. The download alone does not establish that this build can run it."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-pro-3.0-q4.md"
+    },
+    {
+      "id": "oyyo-team-3.0-q4",
+      "displayName": "OYYO Team 3.0",
+      "family": "Team",
+      "parametersB": 35,
+      "capabilities": [
+        "chat",
+        "reasoning",
+        "coding"
+      ],
+      "sizeBytes": 22134528992,
+      "quantization": "Q4_K_M",
+      "minRamGB": 32,
+      "recommendedRamGB": 48,
+      "sha256": "ac0e2c1189e055faa36eff361580e79c5bd6f8e76bffb4ce547f167d53e31a61",
+      "license": "apache-2.0",
+      "specialization": "Large multi-role workload candidate",
+      "description": "A large catalog candidate intended for substantial chat, reasoning and coding requests. An OYYO agent team can assign this model to a role when it is compatible and qualified.",
+      "exampleRequest": "Combine the supplied specialist findings into one consistent project plan, resolve conflicts and list unresolved decisions.",
+      "limitations": [
+        "The word Team does not mean multiple agents or distributed execution are built into the weights. Runtime orchestration creates the team."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-team-3.0-q4.md"
+    },
+    {
+      "id": "oyyo-focus-mini-2.0-q4",
+      "displayName": "OYYO Focus Mini 2.0",
+      "family": "Focus",
+      "parametersB": 7.6,
+      "capabilities": [
+        "chat",
+        "reasoning",
+        "coding"
+      ],
+      "sizeBytes": 4993133376,
+      "quantization": "Q4_K_M",
+      "minRamGB": 12,
+      "recommendedRamGB": 18,
+      "sha256": "4cefb2a4e727322509dac921ee68735ecd4b3546ef28b4366ddab0efdeda1f42",
+      "license": "mit",
+      "specialization": "Mid-size technical candidate",
+      "description": "A newer catalog candidate for chat, reasoning and coding on machines with more headroom than the smallest options. Compare it with the existing qualified models on your own tasks.",
+      "exampleRequest": "Create a troubleshooting checklist from these logs. Separate observations, likely causes and tests.",
+      "limitations": [
+        "Local engine compatibility and quality are not established by its listing. The Mini label is relative to its family, not a guarantee of low memory use."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-focus-mini-2.0-q4.md"
+    },
+    {
+      "id": "oyyo-swift-3.0-q4",
+      "displayName": "OYYO Swift 3.0",
+      "family": "Swift",
+      "parametersB": 1.7,
+      "capabilities": [
+        "chat",
+        "reasoning",
+        "coding"
+      ],
+      "sizeBytes": 1099627808,
+      "quantization": "Q4_K_M",
+      "minRamGB": 6,
+      "recommendedRamGB": 9,
+      "sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+      "license": "other",
+      "specialization": "Compact responsive-work candidate",
+      "description": "A compact catalog candidate for short chat, reasoning and coding assistance. Intended for evaluation where modest download size matters.",
+      "exampleRequest": "Explain this short error message and suggest the first three things to check.",
+      "limitations": [
+        "Speed is hardware-dependent and not measured here. The catalog reports a non-standard license; rights review is required before redistribution or commercial deployment."
+      ],
+      "availability": "runtime-download-candidate",
+      "qualification": "Per-device qualification and acceptance required; no public score asserted",
+      "hardwareRequirementsAreEstimates": true,
+      "execution": "local",
+      "artifactFormat": "GGUF",
+      "cpuSupport": "Requires compatible installed inference engine",
+      "gpuSupport": "Optional acceleration; verify backend and device compatibility",
+      "modelCard": "model-cards/oyyo-swift-3.0-q4.md"
+    }
+  ]
+}

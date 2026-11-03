@@ -1,13 +1,65 @@
 {
-  "version": "0.1",
+  "version": "0.1.14",
   "backends": [
-    {"id": "cpu", "status": "foundation", "required": true},
-    {"id": "cuda", "status": "planned", "vendors": ["NVIDIA"]},
-    {"id": "hip", "status": "planned", "vendors": ["AMD"]},
-    {"id": "vulkan", "status": "planned", "vendors": ["Intel", "AMD", "NVIDIA", "Other"]},
-    {"id": "metal", "status": "planned", "vendors": ["Apple"]},
-    {"id": "sycl", "status": "planned", "vendors": ["Intel"]},
-    {"id": "openvino", "status": "planned", "vendors": ["Intel"]},
-    {"id": "qnn", "status": "planned", "vendors": ["Qualcomm"]}
-  ]
+    {
+      "id": "cpu",
+      "status": "runtime-available",
+      "required": true,
+      "qualification": "Exact artifact, engine and device must pass local checks"
+    },
+    {
+      "id": "cuda",
+      "status": "optional-runtime-configuration",
+      "vendors": [
+        "NVIDIA"
+      ],
+      "qualification": "Requires compatible installed GPU engine, driver, device and local checks"
+    },
+    {
+      "id": "hip",
+      "status": "planned",
+      "vendors": [
+        "AMD"
+      ]
+    },
+    {
+      "id": "vulkan",
+      "status": "planned",
+      "vendors": [
+        "Intel",
+        "AMD",
+        "NVIDIA",
+        "Other"
+      ]
+    },
+    {
+      "id": "metal",
+      "status": "planned",
+      "vendors": [
+        "Apple"
+      ]
+    },
+    {
+      "id": "sycl",
+      "status": "planned",
+      "vendors": [
+        "Intel"
+      ]
+    },
+    {
+      "id": "openvino",
+      "status": "planned",
+      "vendors": [
+        "Intel"
+      ]
+    },
+    {
+      "id": "qnn",
+      "status": "planned",
+      "vendors": [
+        "Qualcomm"
+      ]
+    }
+  ],
+  "scope": "Backend configuration paths; not a statement that every model or device is qualified."
 }
