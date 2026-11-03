@@ -31,7 +31,7 @@ The profile hashes an 8 MiB buffer four times with a round prefix, then uses 32 
 
 ## Meeting workflow
 
-1. Open **More → NotzUp** and set up/check the speech pack if needed.
+1. Provide meeting audio or a transcript within the supported clip limits.
 2. Record or import a supported short clip, or create a note from text.
 3. Review the transcript, edit recognition mistakes and add speaker labels where known.
 4. Generate the local summary, decisions and action items using an accepted local text model. Unknown owners or deadlines remain unspecified.

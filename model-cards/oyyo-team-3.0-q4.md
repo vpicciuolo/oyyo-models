@@ -27,15 +27,11 @@ Capabilities in the runtime catalog: chat, reasoning, coding. These are routing 
 
 System RAM and GPU VRAM are separate resources. These RAM values are catalog estimates, not measurements or guarantees. Context buffers, concurrent roles and other apps increase memory demand. A 4 GB GPU does not make every model runnable; sufficient system RAM and a compatible engine remain necessary.
 
-## How to use it
+## Intended workflow
 
-1. Install OYYO through the [Runtime Runner](https://github.com/vpicciuolo/oyyo-runtime-runner).
-2. Open **More → Model lineup** and find **OYYO Team 3.0**.
-3. Review the hardware fit estimate, download the package and run its local quality check.
-4. After successful qualification and acceptance, leave routing on Auto or select this model explicitly. A failed check must not be bypassed.
-5. Write the request naturally. Use a profile, task template or selected agents when you need reusable instructions.
+Supply the goal, relevant source facts, audience, constraints and desired format. The OYYO workspace can prepare the task-specific brief and select an eligible model. A catalog listing describes an option; readiness requires successful qualification and acceptance on the relevant device.
 
-Availability here means a catalog entry with a pinned artifact, not a published global certification or a guarantee of successful execution on every backend. Device-specific pass/fail and timing results remain in that installation.
+**Available for private demos and private beta. [Request early access](https://oyyo.one/contact).**
 
 ## Limits and verification
 

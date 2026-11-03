@@ -6,9 +6,11 @@
 
 **Everyday assistance · Writing · Coding · Analysis · Mathematics · Local meetings**
 
-[Choose a model](#choose-by-task) · [Full lineup](#local-text-lineup) · [Hardware guide](docs/HARDWARE.md) · [Get OYYO](https://github.com/vpicciuolo/oyyo-runtime-runner)
+[Choose a model](#choose-by-task) · [Full lineup](#local-text-lineup) · [Hardware guide](docs/HARDWARE.md) · [Request early access](https://oyyo.one/contact)
 
 **Catalog 0.1.14 · Snapshot: 3 November 2026**
+
+**Available for private demos and private beta. [Request early access](https://oyyo.one/contact).**
 
 </div>
 
@@ -64,13 +66,24 @@ RAM figures are estimates for system RAM. Download sizes use decimal GB. GPU mem
 
 See the [capability boundaries](docs/CAPABILITIES.md) for voice, creative work, exports and company departments. Roadmap names such as standalone Vision, Growth or Max do not represent available weights in this catalog.
 
-## Start without engineering knowledge
+## Private access
 
-1. Give Codex the [installation repository](https://github.com/vpicciuolo/oyyo-runtime-runner) link and ask it to install OYYO. First installation uses the local key dialog; updates reuse activation.
-2. Open OYYO from its shortcut. In **More → Model lineup**, review the hardware fit and download/check status. The runtime aims to prepare three compatible local text options; downloads, resources and successful qualification determine actual readiness.
-3. Ask naturally: “Help me plan a launch with a $600 budget and three ready-to-use posts.” Supply the product facts and constraints.
-4. Let Auto route the task, or choose a profile, template, model or agent through the available controls. Inspect real execution steps and specialist contributions when needed.
-5. Review the result, ask a follow-up and export using the available document actions. An agent's draft is not proof that a post was published or code was executed.
+**Available for private demos and private beta. [Request early access](https://oyyo.one/contact).**
+
+Tell us about the work you want to improve, your department and the kind of demo you would like to see. Public catalogs describe capabilities; access and demonstrations are arranged privately.
+
+## OYYO public catalogs
+
+| Repository | Discover |
+| --- | --- |
+| [OYYO Models](https://github.com/vpicciuolo/oyyo-models) | Model lineup, specializations, requirements and capability guides |
+| [OYYO Agents](https://github.com/vpicciuolo/oyyo-agents) | All 200 workspace agent roles, department coverage and specialist functions |
+| [OYYO Teams](https://github.com/vpicciuolo/oyyo-teams) | Seven built-in workflow groups, collaboration, review and reusable configurations |
+| [OYYO Task Library](https://github.com/vpicciuolo/oyyo-task-library) | 225 guided tasks, specialist briefs and 12 creative style options |
+| [OYYO Benchmark](https://github.com/vpicciuolo/oyyo-benchmark) | Evaluation methodology, qualification and reproducibility |
+| [OYYO SDK](https://github.com/vpicciuolo/oyyo-sdk) | Developer interfaces and integration documentation |
+
+[Complete ecosystem index](docs/ECOSYSTEM.md)
 
 ## Learn more
 
@@ -87,7 +100,7 @@ See the [capability boundaries](docs/CAPABILITIES.md) for voice, creative work, 
 
 ## Status and rights
 
-The Windows runtime baseline for this snapshot is **0.1.14**. The installation repository separately tracks operating-system builds; a Windows model listing does not establish Mac or mobile qualification. No device-specific benchmark scores, global speed claims or completed foundation-model training are asserted here.
+The Windows runtime baseline for this snapshot is **0.1.14**. Operating-system builds have separate qualification baselines; a Windows model listing does not establish Mac or mobile qualification. No device-specific benchmark scores, global speed claims or completed foundation-model training are asserted here.
 
 OYYO application technology is proprietary. Individual model artifacts retain their own terms. See [LICENSE.md](LICENSE.md) and the [provenance policy](provenance/README.md). Product aliases do not transfer ownership or remove attribution obligations. This catalog omits download-provider branding from the product selection tables; required license and provenance information remains with the applicable artifact records and distribution.
 
