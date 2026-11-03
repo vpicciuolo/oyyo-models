@@ -100,7 +100,7 @@ Tell us about the work you want to improve, your department and the kind of demo
 
 ## Status and rights
 
-The Windows runtime baseline for this snapshot is **0.1.16**. Operating-system builds have separate qualification baselines; a Windows model listing does not establish Mac or mobile qualification. No device-specific benchmark scores, global speed claims or completed foundation-model training are asserted here.
+The workspace runtime baseline for this snapshot is **0.1.16** on Windows x64 and Apple Silicon macOS 14 or later. Standard Mac Metal acceleration is verified; adaptive expert streaming is unavailable on macOS in this release. Operating-system builds have separate qualification baselines; a Windows model listing does not establish Mac or mobile qualification. No device-specific benchmark scores, global speed claims or completed foundation-model training are asserted here.
 
 OYYO application technology is proprietary. Individual model artifacts retain their own terms. See [LICENSE.md](LICENSE.md) and the [provenance policy](provenance/README.md). Product aliases do not transfer ownership or remove attribution obligations. This catalog omits download-provider branding from the product selection tables; required license and provenance information remains with the applicable artifact records and distribution.
 

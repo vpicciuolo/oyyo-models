@@ -12,7 +12,7 @@ The Windows 0.1.16 catalog contains 15 local text candidates with CPU and GPU ac
 
 A GPU inference smoke test on an NVIDIA RTX A500 Laptop GPU placed 246 dense matrices on CUDA, with 1.93 GB VRAM reported in the engine log. This is evidence of that particular GPU run, not a large-model benchmark or a quality qualification. Large expert-model candidates remain subject to resource planning, download integrity, native-backend support and the full quality gate.
 
-macOS builds use their native backend and unified-memory accounting. Windows VRAM estimates and CUDA results must not be represented as Mac qualification results. Native build parity is verified separately.
+macOS builds use their native backend and unified-memory accounting. Windows VRAM estimates and CUDA results must not be represented as Mac qualification results. Native build acceptance is verified separately. macOS ARM64 0.1.16 verified Apple M2 Metal inference with 25/25 layers offloaded. Adaptive expert streaming is unavailable on macOS 14 in this release; the current native package uses standard CPU/Metal placement instead.
 
 [OYYO ONE AI documentation hub](https://github.com/vpicciuolo/oyyo-one-ai) · [OYYO website](https://oyyo.one) · [Exclusive preview](https://oyyo.one/contact#exclusive-preview)
 
