@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "catalogVersion": "0.1.14",
+  "catalogVersion": "0.1.17",
   "options": [
     {
       "id": "OYYO-NotzUP-Tiny-ALL",
@@ -14,6 +14,47 @@
       "captureLimitSeconds": 115,
       "tiersUseSameWeights": true,
       "modelCard": "model-cards/oyyo-notzup-tiny-all.md"
+    },
+    {
+      "id": "OYYO-SIGNAL-TINY-ALL",
+      "displayName": "OYYO-SIGNAL-TINY-ALL S1–S4",
+      "execution": "local",
+      "kind": "market-intelligence-assistant",
+      "release": "2026.11.1",
+      "applicationBaseline": "Android 0.8.0",
+      "artifactFormat": "GGUF",
+      "packageProfile": "OYYO mobile Q8",
+      "offlineInference": true,
+      "externalModelApi": false,
+      "tiersUseSameWeights": false,
+      "variants": [
+        {
+          "tier": "S1",
+          "sizeBytes": 639446688,
+          "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031"
+        },
+        {
+          "tier": "S2",
+          "sizeBytes": 1834426016,
+          "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a"
+        },
+        {
+          "tier": "S3",
+          "sizeBytes": 1834426016,
+          "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+          "sharesCurrentPackageWith": "S2"
+        },
+        {
+          "tier": "S4",
+          "sizeBytes": 1834426016,
+          "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+          "sharesCurrentPackageWith": "S2"
+        }
+      ],
+      "actions": ["NONE", "ANALYZE", "PAPER_PLAN", "ALERT"],
+      "requiresUserConfirmation": true,
+      "realOrderSubmission": false,
+      "modelCard": "model-cards/oyyo-signals-tiny-all.md"
     },
     {
       "id": "oyyo-prime-s3-0.13",

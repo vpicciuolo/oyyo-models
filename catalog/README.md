@@ -1,11 +1,13 @@
 # OYYO catalog data
 
-- `models.json`: all 15 local text-model candidates in the Windows 0.1.14 catalog.
-- `additional-options.json`: local NotzUp speech and optional Prime connected route.
+- `models.json`: all 15 local text-model candidates in the Windows catalog.
+- `additional-options.json`: local NotzUp speech, OYYO Signals local intelligence and the optional Prime connected route.
 
 These files are public descriptive metadata, not installer manifests. They omit download URLs and source-provider branding from the product catalog. Artifact delivery and access are managed privately; applicable licensing and provenance records accompany the relevant artifacts. Do not feed this descriptive catalog to an installer or infer missing permissions from it.
 
 Requirements and specializations are estimates/intended use. No universal benchmark score or device pass status is included. The existing package manifest schema describes a different installer/package format; these catalog files do not pretend to conform to it.
+
+The OYYO Signals option records the customer-facing OYYO release, Android baseline, S1–S4 selection metadata, exact package byte lengths and SHA-256 values. It deliberately contains no download-provider or component-origin names; compliance records are maintained separately.
 
 ## Main OYYO documentation
 

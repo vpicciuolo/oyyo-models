@@ -2,6 +2,19 @@
 
 Start with the RAM available to OYYO, the work you want to do and a small representative task. A larger download does not automatically provide a better experience.
 
+## OYYO Signals mobile tiers
+
+OYYO Signals Android 0.8.0 selects the package for **OYYO-SIGNAL-TINY-ALL 2026.11.1** from measured total memory and available processors.
+
+| Tier | Selection threshold | Current download |
+| --- | --- | ---: |
+| S4 | At least 12 GiB and 8 processors | 1,834,426,016 bytes |
+| S3 | Otherwise, at least 8 GiB and 8 processors | 1,834,426,016 bytes |
+| S2 | Otherwise, at least 6 GiB and 6 processors | 1,834,426,016 bytes |
+| S1 | Other supported devices | 639,446,688 bytes |
+
+S3 and S4 currently use the same qualified package registration as S2. Their separate tier labels preserve device routing for later independently qualified packages; they do not currently imply different weights or better market predictions.
+
 ## A practical starting point
 
 | Total system RAM | Starting candidates | Guidance |

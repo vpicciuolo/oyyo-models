@@ -18,9 +18,22 @@ for m in models:
  text=card.read_text(encoding='utf-8')
  for value in [m['displayName'],m['id'],m['sha256'],m['exampleRequest']]:assert value in text,(card,value)
 options=json.loads((ROOT/'catalog/additional-options.json').read_text(encoding='utf-8'))['options']
-assert len(options)==2 and options[0]['tiersUseSameWeights'] is True
-assert options[1]['execution']=='connected-account' and options[1]['offline'] is False
+assert len(options)==3
+options_by_id={option['id']:option for option in options}
+assert options_by_id['OYYO-NotzUP-Tiny-ALL']['tiersUseSameWeights'] is True
+signals=options_by_id['OYYO-SIGNAL-TINY-ALL']
+assert signals['release']=='2026.11.1' and signals['applicationBaseline']=='Android 0.8.0'
+assert signals['offlineInference'] is True and signals['externalModelApi'] is False
+assert signals['requiresUserConfirmation'] is True and signals['realOrderSubmission'] is False
+assert [variant['tier'] for variant in signals['variants']]==['S1','S2','S3','S4']
+for variant in signals['variants']:
+ assert variant['sizeBytes']>0 and re.fullmatch('[a-f0-9]{64}',variant['sha256'])
+assert options_by_id['oyyo-prime-s3-0.13']['execution']=='connected-account'
+assert options_by_id['oyyo-prime-s3-0.13']['offline'] is False
 for option in options:assert (ROOT/option['modelCard']).is_file()
+signals_card=(ROOT/signals['modelCard']).read_text(encoding='utf-8')
+for value in [signals['id'],signals['release'],signals['applicationBaseline']]:
+ assert value in signals_card,(signals['modelCard'],value)
 links=0
 for f in ROOT.rglob('*.md'):
  if '.git' in f.parts:continue

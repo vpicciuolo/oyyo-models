@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "catalogVersion": "0.1.14",
-  "snapshotDate": "2026-11-03",
+  "catalogVersion": "0.1.17",
+  "snapshotDate": "2026-11-16",
   "runtimeBaseline": "Windows 0.1.14",
   "scope": "15 local text download candidates; does not include installed user state",
   "models": [

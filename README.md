@@ -8,7 +8,7 @@
 
 [Choose a model](#choose-by-task) · [Full lineup](#local-text-lineup) · [Hardware guide](docs/HARDWARE.md) · [Request early access](https://oyyo.one/contact)
 
-**Catalog 0.1.16 · Snapshot: 3 November 2026**
+**Catalog 0.1.17 · Snapshot: 16 November 2026**
 
 **Available for private demos and private beta. [Request early access](https://oyyo.one/contact).**
 
@@ -16,7 +16,7 @@
 
 OYYO combines models, task-specific prompts, persistent memory and specialist agent roles in one workspace. Start with a simple request; the runtime can select a qualified model and prepare instructions for the task. More demanding requests can be split into bounded specialist jobs, reviewed and assembled into one answer.
 
-This repository documents the **15 local text-model candidates currently listed in the Windows runtime**, the NotzUp speech pack and the connected-model option. It contains descriptions and metadata, not model weights or a universal performance certificate. OYYO names are product configuration names; required artifact licenses and provenance remain applicable.
+This repository documents the **15 local text-model candidates currently listed in the Windows runtime**, the NotzUp speech pack, OYYO Signals local intelligence and the connected-model option. It contains descriptions and metadata, not model weights or a universal performance certificate.
 
 ## Choose by task
 
@@ -28,7 +28,7 @@ This repository documents the **15 local text-model candidates currently listed 
 | Coding and debugging | Code 1.0, Core 2.0, Focus Mini 1.0 | Code, error, expected behaviour and tests |
 | Maths and technical analysis | Reason 1.0, Focus Pro 1.0, Pro 1.0 | Inputs, units, constraints and verification criteria |
 | Larger analytical workloads | Pro 3.0, Team 3.0, Focus Mini 2.0 | Structured source material and acceptance criteria |
-| Markets and trading research | [OYYO Signals Tiny ALL S1–S4](model-cards/oyyo-signals-tiny-all.md) | Instrument, horizon, timestamped sources and the required research workflow |
+| Markets and trading research | [OYYO-SIGNAL-TINY-ALL S1–S4](model-cards/oyyo-signals-tiny-all.md) | Instrument, horizon, timestamped sources and the required research workflow |
 | Meetings and notes | [NotzUp Tiny ALL S1–S4](model-cards/oyyo-notzup-tiny-all.md) + a qualified local text model | A short recording/transcript, then the desired notes or language |
 | Optional connected assistance | [Prime S3 0.13](model-cards/oyyo-prime-s3-0.13.md) | An enabled connected account and task-relevant context |
 
@@ -60,6 +60,7 @@ RAM figures are estimates for system RAM. Download sizes use decimal GB. GPU mem
 
 | Option | Execution | Availability and requirements |
 | --- | --- | --- |
+| **OYYO-SIGNAL-TINY-ALL 2026.11.1 · S1–S4** | Local market intelligence | Android 0.8.0 Ask OYYO chat, explanations and reviewable analysis, paper-plan and alert proposals. The device selects and verifies its OYYO package; no external model API is used for inference. |
 | **OYYO-NotzUP-Tiny ALL S1–S4** | Local speech-to-text | Optional 77.7 MB speech pack, compatible speech engine and speech qualification. S1–S4 are device performance tiers using the same weights. Windows beta capture/import is limited to 115 seconds. |
 | **OYYO Prime S3 0.13 · Connected model** | Connected account | Optional account-backed assistance; not an offline weight download. Connection, account access and applicable service limits are required. |
 | **Images, video and vision** | Tool-dependent | Text models can prepare briefs, prompts and storyboards. This Windows catalog does not ship a qualified local image/video generation or vision model. Connected generation requires a separately available tool. |

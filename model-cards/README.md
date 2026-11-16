@@ -1,6 +1,6 @@
 ## Product-specific families
 
-- [OYYO-SIGNALS-TINY-ALL S1–S4](oyyo-signals-tiny-all.md) — local market-intelligence model family for OYYO Trade Signals.
+- [OYYO-SIGNAL-TINY-ALL 2026.11.1 · S1–S4](oyyo-signals-tiny-all.md) — local Ask OYYO and market-intelligence family for OYYO Trade Signals.
 - [OYYO-NOTZUP-TINY-ALL S1–S4](oyyo-notzup-tiny-all.md) — local speech and meeting model family for OYYO NotzUP.
 
 # OYYO model directory

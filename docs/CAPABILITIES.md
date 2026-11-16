@@ -14,6 +14,7 @@
 | PDF, Word and presentations | Content, structure and speaker notes | Export tools and visual review; exported files are not separate model releases |
 | Spoken conversation | Reply text | Microphone permission, transcription and an available voice engine; a specific female voice is not guaranteed on every OS |
 | Recurring work and social activity | Draft tasks and recommended next actions | A real scheduler, connector, account authorisation and execution receipts; suggested actions are not completed actions |
+| Trading research conversation | Plain-language explanation and typed analysis, paper-plan or alert proposal | OYYO-SIGNAL-TINY-ALL in OYYO Signals; customer confirmation, deterministic validation, timestamped market inputs and appropriate risk controls |
 
 ## Company coverage
 

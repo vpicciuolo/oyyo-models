@@ -1,28 +1,30 @@
-# OYYO-SIGNALS-TINY-ALL
+# OYYO-SIGNAL-TINY-ALL
 
-> Local market-intelligence model family for OYYO Signals, with device-qualified S1–S4 artifacts.
+> Private on-device intelligence for OYYO Signals, with hardware-selected S1–S4 packages.
 
 | Identity | Value |
 | --- | --- |
-| Public family name | `OYYO-SIGNALS-TINY-ALL` |
-| Current runtime compatibility ID | `OYYO-SIGNAL-TINY-ALL` |
+| Public family name | `OYYO-SIGNAL-TINY-ALL` |
+| OYYO model release | `2026.11.1` |
+| Android application release | `0.8.0` |
 | Product | [OYYO Trade Signals](https://github.com/vpicciuolo/oyyo-trade-signals) |
-| Surfaces | Desktop, Android, iOS and qualified local runtimes; web account/control plane |
-| Output | Versioned, evidence-rich 13-field market observation |
+| Current shipped surface | Android 0.8.0; desktop and iOS require their own future qualification |
+| Current Android experience | Ask OYYO chat, local explanations, analysis proposals, paper-plan proposals and alert proposals |
 | Execution boundary | Intelligence and decision support; deterministic controls govern every eligible action |
-| Model-card revision | 1.0.0 · 16 November 2026 |
+| Qualification scope | Native Android loading, inference, integrity and protocol tests passed; no market-performance or profit certificate is asserted |
+| Model-card revision | 1.1.0 · 16 November 2026 |
 
-The plural public name identifies the complete customer-facing family. The singular runtime ID remains documented because current application builds use it for package storage and compatibility. They refer to the same Signals model family.
+The customer-facing and runtime identity is `OYYO-SIGNAL-TINY-ALL`. Customer screens show the OYYO family, OYYO release, selected S1–S4 tier and local verification status.
 
 ## What the model does
 
-OYYO-SIGNALS-TINY-ALL turns selected market context into a structured observation that a trader can inspect. It coordinates bounded analysis responsibilities rather than returning an unexplained buy/sell label.
+OYYO-SIGNAL-TINY-ALL powers the local Ask OYYO experience and helps turn a plain-language request into an explanation or a typed proposal that the customer can review.
 
 - Reads instrument, venue, horizon, session, price and market-structure context.
 - Interprets timestamped news, macro events, sentiment, flow and on-chain context when available and permitted.
 - Separates supporting evidence from opposing evidence.
 - Checks freshness, missing inputs, contradictions and risk conditions.
-- Produces a descriptive `bullish`, `bearish` or `neutral` market-state label.
+- Can propose local analysis, a paper plan or a price alert from a guided conversation.
 - Records uncertainty, limitations, sources, provenance and exact model/workflow identity.
 - Supports research, alerts, strategy work, paper scenarios and journal review across OYYO Signals.
 
@@ -40,7 +42,7 @@ flowchart TD
     N --> E
     O --> E
     E --> C[Contradiction and risk review]
-    C --> S[OYYO-SIGNALS-TINY-ALL synthesis]
+    C --> S[OYYO-SIGNAL-TINY-ALL synthesis]
     S --> V[13-field versioned observation]
     V --> R[Trader review]
     R --> A[Alert, strategy, paper/manual/connected workflow or journal]
@@ -66,39 +68,57 @@ Each agent has a narrow responsibility. The coordinator preserves disagreement i
 | `provenance` | `simulated`, `paper` or `live-data` |
 | `notice` | Informational market analysis — not an instruction to transact. |
 
+## Ask OYYO proposal contract
+
+The Android 0.8.0 assistant returns a separate typed proposal. It does not replace the 13-field observation contract.
+
+| Proposal field | Purpose |
+| --- | --- |
+| `reply` | Plain-language explanation or follow-up question |
+| `action` | `NONE`, `ANALYZE`, `PAPER_PLAN` or `ALERT` |
+| `symbol` | Supported normalized market symbol |
+| `strategy` | Optional reviewable paper-plan approach |
+| `risk` | Optional cautious, balanced or active paper profile |
+| `direction` | Optional alert direction: above or below |
+| `threshold` | Optional positive alert price |
+
+Generated proposals are parsed into typed application data. The customer must confirm a proposal, and deterministic application code validates it before saving. The assistant screen cannot submit a real order.
+
 ## Technical specification
 
-The public repository documents the operational contract without publishing proprietary weights or inventing unverified architecture data.
+This public card documents the OYYO operational identity and shipped package contract. Component provenance and compliance records are maintained separately from this customer-facing catalog.
 
 | Specification | Public value |
 | --- | --- |
-| Model family | OYYO-SIGNALS-TINY-ALL |
+| Model family | OYYO-SIGNAL-TINY-ALL |
+| OYYO release | 2026.11.1 |
 | Artifact variants | S1, S2, S3, S4 |
-| Package identity | One exact artifact per variant and release |
-| Mobile package container | Versioned `.bin` package |
-| Parameter count | Artifact-specific proprietary release metadata; not disclosed in the public repository |
-| Quantization | Artifact-specific release metadata; exact value is bound to the signed release manifest |
+| Package identity | Exact OYYO release, tier, byte length and SHA-256 |
+| Mobile package container | Versioned `.gguf` package |
+| Package profile | OYYO mobile Q8 |
 | Context/input limits | Runtime- and workflow-version specific; displayed by the qualified application |
-| Package bytes | Exact integer recorded per artifact release |
+| Current S1 package | 639,446,688 bytes |
+| Current S2 package | 1,834,426,016 bytes |
+| Current S3/S4 package | 1,834,426,016 bytes; shared current package until separate tier releases pass qualification |
 | Integrity | SHA-256 over the complete artifact; 64 hexadecimal characters |
 | Download transport | HTTPS, resumable with byte ranges |
 | Activation rule | Exact byte length and SHA-256 must both match |
-| Local storage | Customer device application storage |
-| Output schema | OYYO Signals 13-field contract |
-| Provenance | Model artifact, workflow, runtime, sources and result provenance retained with the observation |
+| Local storage | Private application storage on the customer device |
+| Inference boundary | Local native inference; no external model API or MCP transport |
+| Output schemas | Ask OYYO typed proposal plus the separate OYYO Signals 13-field observation contract |
 
-Parameter count and quantization are not inferred from a filename. An OYYO release is identified by its model version, variant, exact byte length, SHA-256, quantization/conversion record, runtime compatibility and workflow version. This prevents a similarly named but different file from being represented as the approved model.
+An OYYO release is identified by its model version, tier, exact byte length, SHA-256, package profile, runtime compatibility and workflow version. This prevents a similarly named but different file from being represented as the approved model.
 
 ## S1–S4 variants
 
 S1–S4 let OYYO install the artifact appropriate for the measured device while preserving the same customer-facing signal contract.
 
-| Variant | Android selection threshold | Why it exists |
-| --- | --- | --- |
-| **S1** | Device does not meet a higher tier | Smallest device profile and broadest compatibility |
-| **S2** | At least 6 GiB total memory and 6 available processors | Balanced profile for capable mobile devices |
-| **S3** | At least 8 GiB total memory and 8 available processors | Higher local compute profile |
-| **S4** | At least 12 GiB total memory and 8 available processors | Highest current Android device profile |
+| Variant | Android selection threshold | Current package |
+| --- | --- | ---: |
+| **S1** | Device does not meet a higher tier | 639,446,688 bytes |
+| **S2** | At least 6 GiB total memory and 6 available processors | 1,834,426,016 bytes |
+| **S3** | At least 8 GiB total memory and 8 available processors | 1,834,426,016 bytes |
+| **S4** | At least 12 GiB total memory and 8 available processors | 1,834,426,016 bytes |
 
 Selection is evaluated in descending order, so an S4-capable device receives S4. These are compute profiles, not promises that a higher number will predict markets better. Desktop and iOS qualification can use platform-specific measurements while retaining the S1–S4 family names and the same output contract.
 
@@ -126,20 +146,20 @@ flowchart LR
 4. The application rejects a payload larger than the registered size.
 5. The complete package must match both the exact byte count and SHA-256.
 6. Only a verified package is atomically activated.
-7. The runtime reports the active variant and local package size.
+7. The runtime reports only the OYYO family, OYYO version, active tier and verification status in normal customer UI.
 8. Saved observations retain the model/workflow identity required for later review.
 
 A missing or invalid manifest never silently falls back to an unrelated model.
 
 ## How the model supports trading modes
 
-| Mode | Role of OYYO-SIGNALS-TINY-ALL | Customer and control boundary |
+| Mode | Role of OYYO-SIGNAL-TINY-ALL | Customer and control boundary |
 | --- | --- | --- |
 | Research | Produces evidence-rich observations and scenario context | No order is created |
 | Paper | Supplies context for simulated tickets, positions and journal review | Local paper ledger and paper-risk limits |
-| Manual | Prepares inspectable context for an eligible ticket | Trader submits the exact ticket |
-| Supervised | Prepares a bounded intent and its evidence | Trader approves the exact intent |
-| Automatic | Evaluates only inside a customer-enabled strategy envelope | Connector permissions, deterministic limits and kill switch remain authoritative |
+| Manual | Product capability subject to connector and release gates | Not enabled by the Android 0.8.0 assistant |
+| Supervised | Product capability subject to connector and release gates | Not enabled by the Android 0.8.0 assistant |
+| Automatic | Product capability subject to connector and release gates | Not enabled by the Android 0.8.0 assistant |
 
 Model output alone never grants execution authority. Availability of connected modes depends on the installed application, eligible local connector, customer permissions, region, policy and release configuration.
 
@@ -181,7 +201,7 @@ Changing weights, quantization, conversion, runtime compatibility or the materia
 
 ## Limits and responsible use
 
-Markets are uncertain. OYYO-SIGNALS-TINY-ALL is decision-support software, not investment advice, a broker, a custodian, a guarantee of performance or an instruction to transact. Data can be delayed, incomplete or wrong. Model output can be wrong. Traders must verify sources, understand connector behavior, apply independent judgment and use appropriate risk controls. Past, paper or simulated results do not indicate future results.
+Markets are uncertain. OYYO-SIGNAL-TINY-ALL is decision-support software, not investment advice, a broker, a custodian, a guarantee of performance or an instruction to transact. Data can be delayed, incomplete or wrong. Model output can be wrong. Traders must verify sources, understand connector behavior, apply independent judgment and use appropriate risk controls. Past, paper or simulated results do not indicate future results.
 
 ## Related documentation
 
