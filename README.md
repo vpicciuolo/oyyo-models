@@ -28,6 +28,7 @@ This repository documents the **15 local text-model candidates currently listed 
 | Coding and debugging | Code 1.0, Core 2.0, Focus Mini 1.0 | Code, error, expected behaviour and tests |
 | Maths and technical analysis | Reason 1.0, Focus Pro 1.0, Pro 1.0 | Inputs, units, constraints and verification criteria |
 | Larger analytical workloads | Pro 3.0, Team 3.0, Focus Mini 2.0 | Structured source material and acceptance criteria |
+| Markets and trading research | [OYYO Signals Tiny ALL S1–S4](model-cards/oyyo-signals-tiny-all.md) | Instrument, horizon, timestamped sources and the required research workflow |
 | Meetings and notes | [NotzUp Tiny ALL S1–S4](model-cards/oyyo-notzup-tiny-all.md) + a qualified local text model | A short recording/transcript, then the desired notes or language |
 | Optional connected assistance | [Prime S3 0.13](model-cards/oyyo-prime-s3-0.13.md) | An enabled connected account and task-relevant context |
 
