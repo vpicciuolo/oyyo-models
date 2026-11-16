@@ -1,3 +1,8 @@
+## Product-specific families
+
+- [OYYO-SIGNALS-TINY-ALL S1–S4](oyyo-signals-tiny-all.md) — local market-intelligence model family for OYYO Trade Signals.
+- [OYYO-NOTZUP-TINY-ALL S1–S4](oyyo-notzup-tiny-all.md) — local speech and meeting model family for OYYO NotzUP.
+
 # OYYO model directory
 
 Catalog cards describe available download candidates and intended use. They do not assert completion of the broader official model release gate or universal hardware certification. Each local installation must qualify and accept its exact artifact.
